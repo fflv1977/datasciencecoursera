@@ -1,0 +1,20 @@
+This document describe variables, the data, and transformations performed to clean up the datasets from the Human Activity Recognition Using Smartphones. 
+
+ORIGINAL DATASETS:
+Download site: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+DESCRIPTION OF ORIGINAL FILES:
+Files can be grouped in 3 categories:
+- GENERAL FILES: Containing labels and related information.
+- TRAIN FILES: Cointaining data for the TRAIN group.
+- TEST FILES: Cointaining data for the TEST group.
+
+
+CLEANING PROCESS:
+1.  TRAIN and GENERAL files were combined with the intension to add labels to the TRAIN dataset. Result = 1 table (traindata1).
+2.  TEST and GENERAL files were combined with the intension to add labels to the TEST dataset. Result = 1 table (testdata1).
+3.  TRAIN and TEST tables were merged to have one single table with all observations. Result = 1 table (SOURCETABLE).
+4.  Non-essencial variables were removed from the table (Mean and STD variables were kept)
+5.  All variables were averaged by ACTIVITY. Result = 1 table (AVGTABLE)
+
+
