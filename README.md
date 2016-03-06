@@ -1,20 +1,22 @@
-Script Name: run_analysis.R
+#Script Name: run_analysis.R
 
-Decription:
-sTAGE 1:
-Brings all labels from files.
+#Source Files:
+ ## Files belonged to the Human Activity Recognition Using Smartphones Dataset
+(Version 1.0)
+ ## Download Site: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Stage 2:
-Joins the TRAIN dataset and related label into one table (traindata1)
 
-Stage 3:
-Joins the TEST dataset and related label into one table (testdata1)
+#Analysis Goal:
+ ## To clean and prepare data for further analysis.
 
-Stage 4:
-Joins testdata1 + traindata1. (SOURCETABLE)
 
-Stage 5:
-Averages all variables by ACTIVITYNAME. (AVGTABLE)
+#Analysis Description:
+	##Labels were added to all tables.
+	##Data Tables were combined to produce one single dataset.
+	##Extra variables were removed.
+	##Dataset was aggregated by columns SUBJECTID and ACTIVITYID. Mean calculated for all variables.
 
-Stage 6:
-Writes a txt file with the average result.
+
+#Results:
+	##SOURCETABLE; This table contain all measurements for all datasets required for analysis.
+	##AVERAGETABLE; This table is the result of aggregating the SOURCETABLE by ACTIVITY and SUBJECT.
